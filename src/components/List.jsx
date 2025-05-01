@@ -31,16 +31,21 @@ const List = () => {
     ]
   return <main>
 
-    {users.map(({name , company , price }) => (
-        <ul key = {Math.random()}>
+  {users.map(({ name, company, price }, index) => (
 
-            <li>{users.name}</li>
-            <li>{users.price}</li>
-            <li>{users.company}</li>
+    <ul key={index}>
 
-        </ul>
-    ))}
-  </main>
+      <li>{name}</li>
+
+      <li>{price}</li>
+      
+      <li>{company}</li>
+    </ul>
+
+
+  ))}
+</main>
+
 
 
 //  this way it can also be done 
